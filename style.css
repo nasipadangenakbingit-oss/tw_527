@@ -1,0 +1,178 @@
+/* CV Digital - Prayogi Sastra Adi Raja */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 12px 16px;
+}
+
+nav .logo {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 10px;
+}
+
+nav ul li a:hover {
+  background-color: #34495e;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  background-color: #2c3e50;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.profile-text h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+}
+
+.profile-text h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #dddddd;
+}
+
+.profile-text p { margin: 0 0 10px; }
+.contact-line { font-size: 14px; color: #dddddd; }
+
+.actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover { background-color: #dddddd; }
+
+.btn-outline {
+  background-color: #2c3e50;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.btn-outline:hover { background-color: #34495e; }
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+}
+
+section h2 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 6px;
+}
+
+
+.skills-grid {
+  display: grid;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-grid li {
+  background-color: #f2f2f2;
+  border: 1px solid #dddddd;
+  padding: 12px;
+}
+
+
+.portfolio-grid {
+  display: grid;
+   gap: 12px;
+}
+
+.portfolio-grid article {
+  background-color: #f9f9f9;
+  border: 1px solid #dddddd;
+  padding: 12px;
+  margin-bottom: 0;
+}
+
+.portfolio-grid article:hover { background-color: #f2f2f2; }
+
+a { color: #2c3e50; }
+
+.note { font-size: 14px; color: #666666; }
+
+footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+}
+
+@media (max-width: 700px) {
+  .profile { flex-direction: column; text-align: center; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .portfolio-grid { grid-template-columns: 1fr; }
+  nav { flex-direction: column; align-items: flex-start; }
+}
+
+@media print {
+  nav, .actions { display: none; }
+  body { background-color: #ffffff; }
+}
